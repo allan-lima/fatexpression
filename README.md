@@ -1,4 +1,4 @@
-#[FatExpression v1.0.0]
+#FatExpression
 ###python class used for calculating text-presented expressions
 
 The class FatExpression (Python) is based in TFatExpression (Delphi).
@@ -14,32 +14,30 @@ FatExpression and TFatExpression is open-source and is free for all use.
 
 - keys, brackets, parenthesis: {}, [], ()
 - basic operations:
-  addition         +      3 + 2 = 5
-  substration      -      3 - 2 = 1
-  multiplication   *      3 * 2 = 6
-  division         /      3 / 2 = 1.5
-  exponentiation   ^      3 ^ 2 = 9
-  factorial:       !      3! = 6
-  module           %      3 % 2 = 1
-  unary minus      -      (-x) = x * (-1)
+  - addition         +      3 + 2 = 5
+  - substration      -      3 - 2 = 1
+  - multiplication   *      3 * 2 = 6
+  - division         /      3 / 2 = 1.5
+  - exponentiation   ^      3 ^ 2 = 9
+  - factorial:       !      3! = 6
+  - module           %      3 % 2 = 1
+  - unary minus      -      (-x) = x * (-1)
 
 - relational operations:
-  minor            <      3 < 2 = 0
-  major            >      3 > 2 = 1
-  major or equal   >=     3 >= 2 = 1
-  minor or egual   <=     3 <= 2 = 0
-  different        <>     3 <> 2 = 1
-  egual            =      3 = 2 = 0
+  - minor            <      3 < 2 = 0
+  - major            >      3 > 2 = 1
+  - major or equal   >=     3 >= 2 = 1
+  - minor or egual   <=     3 <= 2 = 0
+  - different        <>     3 <> 2 = 1
+  - egual            =      3 = 2 = 0
 
 - logic operations:
-  and              &      1 & 1 = 1, 1 & 0 = 0
-  or               |      1 | 0 = 1, 0 | 0 = 0
-  exclusive or     ?      1 ? 0 = 1, 1 ? 1 = 0
-  negation         ~      ~1 = 0, ~0 = 1
+  - and              &      1 & 1 = 1, 1 & 0 = 0
+  - or               |      1 | 0 = 1, 0 | 0 = 0
+  - exclusive or     ?      1 ? 0 = 1, 1 ? 1 = 0
+  - negation         ~      ~1 = 0, ~0 = 1
 
-- mathematical functions
-  abs, frac, max, min, mod, round, sign
-  sqrt, exp, trunc, sum
+- mathematical functions: abs, frac, max, min, mod, round, sign, sqrt, exp, trunc, sum
 
     $ variables = ['a=1.1','b=2.2','c=3.3']
     $ exp = FatExpression()
@@ -51,16 +49,14 @@ FatExpression and TFatExpression is open-source and is free for all use.
     $ print(exp.value)
     $ 7.0
 
-- geometric functions
-  sin, cos, tan, atan, log, exp
+- geometric functions: sin, cos, tan, atan, log, exp
 
     $ exp = FatExpression()
     $ exp.text = 'log(1)'
     $ print(exp.value)
     $ 0
 
-- various functions
-  and, or, if, random
+- various functions: and, or, if, random
 
     $ variables = ['a=1','b=2','c=3']
     $ exp = FatExpression()
@@ -100,15 +96,17 @@ FatExpression and TFatExpression is open-source and is free for all use.
     $ print(exp.value)
     $ 6.0
 
-- multiples lines of FText: undercore is value previous.
+- multiples lines of text: undercore is value previous.
 
-    $ exp = FatExpression()
-    $ exp.text = ['y*2', '_+3*2']
-    $ print(exp.value)
-    $ 12.0
-    $ exp.text = ['a:y*2', 'a+3*2']
-    $ print(exp.value)
-    $ 12.0
+```python
+    >> exp = FatExpression()
+    >> exp.text = ['y*2', '_+3*2']
+    >> print(exp.value)
+    >> 12.0
+    >> exp.text = ['a:y*2', 'a+3*2']
+    >> print(exp.value)
+    >> 12.0
+```
 
 ##Author
 - Email: allan.kardek@gmail.com
