@@ -30,9 +30,9 @@ setup(
     version='1.0',
     description='FatExpression is python class used for calculating text-presented expressions',
     long_description=readme + '\n\n' + history,
-    author='Henrique Pereira',
-    author_email='ikkibr@gmail.com',
-    url='https://github.com/ikkebr/fatexpression',
+    author='Allan Lima',
+    author_email='allan.kardek@gmail.com',
+    url='https://github.com/allan-lima/fatexpression',
     py_modules=[
         'fatexpression',
     ],
