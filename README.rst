@@ -69,140 +69,93 @@ logic operations::
 
 Example::
 
-```python
-
+    python
     >> variables = ['a=1.1','b=2.2','c=3.3']
-    
     >> exp = FatExpression()
-    
     >> exp.addVariables(variables)
-    
     >> exp.text = 'trunc(max(a, b, c))'
-    
     >> print(exp.value)
-    
     >> 3.0
-    
     >> exp.text = 'round(sum(a, b, c))'
-    
     >> print(exp.value)
-    
     >> 7.0
-```
+
 
 - geometric functions: sin, cos, tan, atan, log, exp
 
 Example::
 
-```python
-
+    python
     >> exp = FatExpression()
-    
     >> exp.text = 'log(1)'
-    
     >> print(exp.value)
-    
     >> 0
-```
+
 
 - various functions: and, or, if, random
 
 Example::
 
-```python
-
+    python
     >> variables = ['a=1','b=2','c=3']
-    
     >> exp = FatExpression()
-    
     >> exp.addVariables(variables)
-    
     >> exp.text = 'if(a=1, b*10, c*10)'
-    
     >> print(exp.value)
-    
     >> 20.0
-```
+
 
 - variables:
 
 Example::
 
-```python
+    python
 
     >> variables = ['a=1','b=2','c=3'] # variables = {'a':1,'b':2,'c':3} or variables = 'a=1;b=2;c=3'
-    
     >> exp = FatExpression()
-    
     >> exp.addVariables(variables)
-    
     >> exp.text = 'a+b+c'
-    
     >> print(exp.value)
-    
     >> 6.0
-```
+
 
 - user-defined functions (udf):
   format function_name [ (argument_name [, argument_name ... ]] = expression
 
 Example::
 
-```python
-
+    python
     >> functions = ['x(a,b)=a*b', 't1(a)=a+10'] # functions = 'x(a,b)=a*b;t1(a)=a+10'
-    
     >> exp = FatExpression()
-    
     >> exp.addFunctions(functions)
-    
     >> exp.text = 'x(1,3)+t1(2)'
-    
     >> print(exp.value)
-    
     >> 15.0
-```
+    
 
 - evaluate: words are processed by unresolved events "evaluates" recorded addEvaluate().
 
 Example::
 
-```python
-
+    python
     >> def test(text, args, argCount):
-    
     >>     if text == 'y':
-    
     >>         return 3
-    
     >> exp = FatExpression()
-    
     >> exp.addEvaluate(test)
-    
     >> exp.text = 'y*2'
-    
     >> print(exp.value)
-    
     >> 6.0
-```
 
 - multiples lines of text: undercore is value previous.
 
 Example::
 
-```python
-
+    python
     >> exp = FatExpression()
-    
     >> exp.text = ['y*2', '_+3*2']
-    
     >> print(exp.value)
-    
     >> 12.0
-    
     >> exp.text = ['a:y*2', 'a+3*2']
-    
     >> print(exp.value)
-    
     >> 12.0
-```
