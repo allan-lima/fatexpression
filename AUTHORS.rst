@@ -5,9 +5,9 @@ Credits
 Development Lead
 ----------------
 
-* Henrique Pereira <ikkibr@gmail.com>
+* Alan Lima <allan.kardek@gmail.com>
 
 Contributors
 ------------
 
-None yet. Why not be the first?
+* Henrique Pereira <ikkibr@gmail.com>
