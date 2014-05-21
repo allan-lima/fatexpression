@@ -673,14 +673,14 @@ class ExpFunction:
         while token:
 
             if ExpectFuncName:
-                if token.tokenType <> ttString:
+                if token.tokenType != ttString:
                     raise Exception(ERROR_FUNCTION_INVALID % self.text)
 
                 self.name = token.tokenText
                 ExpectFuncName = False
 
             elif ExpectParenthesisOpen:
-                if token.tokenType <> ttParenthesisOpen:
+                if token.tokenType != ttParenthesisOpen:
                     raise Exception(ERROR_FUNCTION_HEADER % value)
 
                 ExpectParenthesisOpen  = False
