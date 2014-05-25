@@ -5,14 +5,14 @@ FatExpression
 .. image:: https://badge.fury.io/py/fatexpression.png
     :target: http://badge.fury.io/py/fatexpression
     
-.. image:: https://travis-ci.org/ikkebr/fatexpression.png?branch=master
-        :target: https://travis-ci.org/ikkebr/fatexpression
+.. image:: https://travis-ci.org/allan-lima/fatexpression.png?branch=master
+        :target: https://travis-ci.org/allan-lima/fatexpression
 
 .. image:: https://pypip.in/d/fatexpression/badge.png
         :target: https://pypi.python.org/pypi/fatexpression
 
-.. image:: https://coveralls.io/repos/ikkebr/fatexpression/badge.png 
-        :target: https://coveralls.io/r/ikkebr/fatexpression
+.. image:: https://coveralls.io/repos/allan-lima/fatexpression/badge.png 
+        :target: https://coveralls.io/r/allan-lima/fatexpression
 
 
 FatExpression is python class used for calculating text-presented expressions.
